@@ -249,6 +249,7 @@
 
         dragStart: function(e)
         {
+            this.el.trigger('dragStart');
             var mouse    = this.mouse,
                 target   = $(e.target),
                 dragItem = target.closest(this.options.itemNodeName);
